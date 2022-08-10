@@ -68,7 +68,7 @@ const cardata = [
 {
     make: 'Kia',
     model: 'Forte',
-    year: '2018',
+    year: '2015',
     price: 18000.00,
     mileage: 3402,
     condition: 'Excellent'
