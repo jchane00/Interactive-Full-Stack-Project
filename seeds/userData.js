@@ -1,85 +1,96 @@
-const { Painting } = require('../models');
+const { User } = require('../models');
 
-const paintingdata = [
+const userdata = [
   {
-    title: 'Blossoming Apricot',
-    artist: 'LedyX',
-    exhibition_date: 'March 30, 2018',
-    gallery_id: 1,
-    filename: '01-blossoming-apricot.jpg',
-    description:
-      'Branches with pink apricot blossoms against a blue background.',
+    name: 'Honda Accord',
+    car_id: 1,
+    filename: '01-Honda-Accord.jpeg',
+    price: 18999.00,
+    mileage: 3402,
+    condition: 'Excellent',
   },
   {
-    title: 'Cosmos Flowers',
-    artist: 'WStudio',
-    exhibition_date: 'May 05, 2017',
-    gallery_id: 1,
-    filename: '02-cosmos-flowers.jpg',
-    description: 'Pink cosmos flowers against a blue sky.',
+    name: 'Kia Forte',
+    car_id: 2,
+    filename: '02-Kia-Forte.jpeg',
+    price: 16799.00,
+    mileage: 75957,
+    condition: 'Excellent',
   },
   {
-    title: 'Sand + Sea = Summer',
-    artist: 'S_Photo',
-    exhibition_date: 'June 10, 2019',
-    gallery_id: 2,
-    filename: '03-sand-sea-summer.jpg',
-    description: 'Sandy beach with the blue sea and sky in the background.',
+    name: 'Nissan Sentra',
+    car_id: 3,
+    filename: '03-Nissan-Sentra.jpeg',
+    price: 13469.00,
+    mileage: 23402,
+    condition: 'Fair',
   },
   {
-    title: 'Beach Chairs',
-    artist: 'icemanphotos',
-    exhibition_date: 'July 4, 2020',
-    gallery_id: 2,
-    filename: '04-beach-chairs.jpg',
-    description: 'Two beach chairs under a beach umbrella on the beach.',
+    name: 'Ford Focus',
+    car_id: 4,
+    filename: '04-Ford-Focus.jpeg',
+    price: 10959.00,
+    mileage: 110306,
+    condition: 'Good',
   },
   {
-    title: 'Beach Sunrise',
-    artist: 'VRstudio',
-    exhibition_date: 'August 14, 2016',
-    gallery_id: 2,
-    filename: '05-beach-sunrise.jpg',
-    description: 'Sun setting in the horizon with waves lapping the shore.',
+    name: 'Ford Mustang',
+    car_id: 5,
+    filename: '05-Ford-Mustang.jpeg',
+    price: 28999.00,
+    mileage: 105089,
+    condition: 'Excellent',
   },
   {
-    title: 'Fall Colors',
-    artist: 'DrivingJack',
-    exhibition_date: 'October 15, 2018',
-    gallery_id: 3,
-    filename: '06-fall-colors.jpg',
-    description:
-      'Trees with red, orange, yellow leaves reflected on a still lake.',
+    name: 'Mercedes Benz C-Class',
+    car_id: 6,
+    filename: '06-Mercedes-Benz.jpeg',
+    price: 25895.00,
+    mileage: 45081,
+    condition: 'Excellent',
   },
   {
-    title: 'Autumn Mountains',
-    artist: 'Vitalii_Mamchuk',
-    exhibition_date: 'November 3, 2016',
-    gallery_id: 3,
-    filename: '07-autumn-mountains.jpg',
-    description:
-      'Mountains with red and yellow leaves against a background of hazy rolling hills.',
+    name: 'Ford Fusion',
+    car_id: 7,
+    filename: '07-Ford-Fusion.jpeg',
+    price: 10995.00,
+    mileage: 45086,
+    condition: 'Excellent'
   },
   {
-    title: 'Frozen River',
-    artist: 'Vlad Sokolovsky',
-    exhibition_date: 'December 24, 2020',
-    gallery_id: 4,
-    filename: '08-frozen-river.jpg',
-    description:
-      'Trees with white frozen branches reflected on a frozen river against a light pink sky.',
+    name: 'Toyota Corolla',
+    car_id: 8,
+    filename: '08-Toyota-Corolla.jpeg',
+    price: 16599.00,
+    mileage: 8764,
+    condition: 'Excellent'
   },
   {
-    title: 'Winter Home',
-    artist: 'Smit',
-    exhibition_date: 'January 20, 2018',
-    gallery_id: 4,
-    filename: '09-winter-home.jpg',
-    description:
-      'Log cabin blanketed in heavy white snow with tall snow covered pine trees in the background.',
+    name: 'Nissan Versa',
+    car_id: 9,
+    filename: '09-Nissan-Versa.jpeg',
+    price: 9599.00,
+    mileage: 134087,
+    condition: 'Fair',
   },
+  {
+    name: 'Mazda Mazda3',
+    car_id: 10,
+    filename: '10-Mazda-3.jpeg',
+    price: 16895.00,
+    mileage: 103482,
+    condition: 'Good',
+  },
+  {
+    name: 'Subaru Impreza',
+    car_id: 11,
+    filename: '11-Subaru-Impreza.jpeg',
+    price: 11959.00,
+    mileage: 165923,
+    condition: 'Fair',
+  }
 ];
 
-const seedPaintings = () => Painting.bulkCreate(paintingdata);
+const seedUsers = () => User.bulkCreate(userdata);
 
-module.exports = seedPaintings;
+module.exports = seedUsers;
