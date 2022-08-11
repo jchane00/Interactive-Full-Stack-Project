@@ -7,4 +7,7 @@ module.exports = {
       new Date(date).getFullYear() + 5
     }`;
   },
+  format_uppercase: (name) => {
+    return name.toUpperCase();
+  }
 };
