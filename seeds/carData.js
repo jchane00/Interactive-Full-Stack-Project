@@ -2,6 +2,7 @@ const { Cars } = require('../models');
 
 const cardata = [
 {
+    filename: '01-Honda-Accord.jpeg',
     make: 'Honda',
     model: 'Accord',
     year: '2015',
@@ -10,6 +11,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    filename: '02-Kia-Forte.jpeg',
     make: 'Kia',
     model: 'Forte',
     year: '2018',
@@ -18,6 +20,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    filename: '03-Nissan-Sentra.jpeg',
     make: 'Nissan',
     model: 'Sentra',
     year: '2016',
@@ -26,6 +29,7 @@ const cardata = [
     condition: 'Fair'
 },
 {
+    filename: '04-Ford-Focus.jpeg',
     make: 'Ford',
     model: 'Focus',
     year: '2017',
@@ -34,6 +38,7 @@ const cardata = [
     condition: 'Good'
 },
 {
+    filename: '05-Ford-Mustang.jpeg',
     make: 'Ford',
     model: 'Mustang',
     year: '1974',
@@ -42,6 +47,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    filename: '06-Mercedes-Benz.jpeg',
     make: 'Mercedes-Benz',
     model: 'C-Class',
     year: '2019',
@@ -50,6 +56,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    filename: '07-Ford-Fusion.jpeg',
     make: 'Ford',
     model: 'Fusion',
     year: '2017',
@@ -58,6 +65,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    filename: '08-Toyota-Corolla.jpeg',
     make: 'Toyota',
     model: 'Corolla',
     year: '2019',
@@ -66,6 +74,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    filename: '09-Nissan-Versa.jpeg',
     make: 'Nissan',
     model: 'Versa',
     year: '2011',
@@ -74,6 +83,7 @@ const cardata = [
     condition: 'Fair'
 },
 {
+    filename: '10-Mazda-3.jpeg',
     make: 'Mazda',
     model: 'Mazda3',
     year: '2014',
@@ -82,6 +92,7 @@ const cardata = [
     condition: 'Good',
 },
 {
+    filename: '11-Subaru-Impreza.jpeg',
     make: 'Subaru',
     model: 'Impreza',
     year: '2013',

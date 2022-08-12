@@ -11,6 +11,10 @@ Cars.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     make: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -19,10 +23,22 @@ Cars.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    vin_number: {
+    year: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    price: {
+      type: DataTypes.DECIMAL,
+      allowNull: false
+    },
+    mileage: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    condition: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   },
   {
     sequelize,
