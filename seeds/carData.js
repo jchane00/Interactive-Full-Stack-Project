@@ -7,7 +7,9 @@ const cardata = [
     year: '2018',
     price: 18999.00,
     mileage: 3402,
-    condition: 'Excellent'
+    condition: 'Excellent',
+    vin_number: 'one'
+
 },
 {
     make: 'Honda',
@@ -15,7 +17,10 @@ const cardata = [
     year: '2015',
     price: 16799.00,
     mileage: 75957,
-    condition: 'Excellent'
+    condition: 'Excellent',
+    vin_number: 'two'
+
+    
 },
 {
     make: 'Ford',
@@ -23,7 +28,9 @@ const cardata = [
     year: '2017',
     price: 10959.00,
     mileage: 110306,
-    condition: 'Good'
+    condition: 'Good',
+    vin_number: 'three'
+
 },
 {
     make: 'Ford',
@@ -31,7 +38,9 @@ const cardata = [
     year: '1974',
     price: 28999.00,
     mileage: 105089,
-    condition: 'Excellent'
+    condition: 'Excellent',
+    vin_number: 'four'
+
 },
 {
     make: 'Nissan',
@@ -39,7 +48,9 @@ const cardata = [
     year: '2016',
     price: 13469.00,
     mileage: 23402,
-    condition: 'Fair'
+    condition: 'Fair',
+    vin_number: 'five'
+
 },
 {
     make: 'Toyota',
@@ -47,7 +58,9 @@ const cardata = [
     year: '2019',
     price: 16599.00,
     mileage: 8764,
-    condition: 'Excellent'
+    condition: 'Excellent',
+    vin_number: 'six'
+
 },
 {
     make: 'Nissan',
@@ -55,7 +68,9 @@ const cardata = [
     year: '2011',
     price: 9599.00,
     mileage: 134087,
-    condition: 'Fair'
+    condition: 'Fair',
+    vin_number: 'seven'
+
 },
 {
     make: 'Ford',
@@ -63,7 +78,9 @@ const cardata = [
     year: '2017',
     price: 16995.00,
     mileage: 55087,
-    condition: 'Good'
+    condition: 'Good',
+    vin_number: 'eight'
+
 },
 {
     make: 'Kia',
@@ -71,7 +88,9 @@ const cardata = [
     year: '2015',
     price: 18000.00,
     mileage: 3402,
-    condition: 'Excellent'
+    condition: 'Excellent',
+    vin_number: 'nine'
+
 },
 {
     make: 'Mercedes-Benz',
@@ -79,7 +98,9 @@ const cardata = [
     year: '2019',
     price: 25895.00,
     mileage: 45081,
-    condition: 'Excellent'
+    condition: 'Excellent',
+    vin_number: 'ten'
+
 },
 {
     make: 'Mazda',
@@ -87,7 +108,9 @@ const cardata = [
     year: '2014',
     price: 16895.00,
     mileage: 103482,
-    condition: 'Good'
+    condition: 'Good',
+    vin_number: 'eleven'
+
 },
 {
     make: 'Subaru',
@@ -95,11 +118,13 @@ const cardata = [
     year: '2013',
     price: 11959.00,
     mileage: 165923,
-    condition: 'Fair'
+    condition: 'Fair',
+    vin_number: 'twelve'
+
 },
 
 ];
 
-const seedGallery = () => Gallery.bulkCreate(gallerydata);
+const seedCars = () => Cars.bulkCreate(cardata);
 
-module.exports = seedGallery;
+module.exports = seedCars;
