@@ -16,25 +16,19 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    username: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
-      type: DataTypes.STRING,
+    employee_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
-      },
+      unique: true
     },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [6],
-      },
-    },
+    }
   },
   {
     hooks: {
