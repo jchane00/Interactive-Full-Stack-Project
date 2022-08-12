@@ -11,6 +11,11 @@ Cars.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    car_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      unique: true
+    },
     filename: {
       type: DataTypes.STRING,
       allowNull: false,

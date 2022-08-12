@@ -2,6 +2,7 @@ const { Cars } = require('../models');
 
 const cardata = [
 {
+    car_id: 1,
     filename: '01-Honda-Accord.jpeg',
     make: 'Honda',
     model: 'Accord',
@@ -11,6 +12,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    car_id: 2,
     filename: '02-Kia-Forte.jpeg',
     make: 'Kia',
     model: 'Forte',
@@ -20,6 +22,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    car_id: 3,
     filename: '03-Nissan-Sentra.jpeg',
     make: 'Nissan',
     model: 'Sentra',
@@ -29,6 +32,7 @@ const cardata = [
     condition: 'Fair'
 },
 {
+    car_id: 4,
     filename: '04-Ford-Focus.jpeg',
     make: 'Ford',
     model: 'Focus',
@@ -38,6 +42,7 @@ const cardata = [
     condition: 'Good'
 },
 {
+    car_id: 5,
     filename: '05-Ford-Mustang.jpeg',
     make: 'Ford',
     model: 'Mustang',
@@ -47,6 +52,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    car_id: 6,
     filename: '06-Mercedes-Benz.jpeg',
     make: 'Mercedes-Benz',
     model: 'C-Class',
@@ -56,6 +62,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    car_id: 7,
     filename: '07-Ford-Fusion.jpeg',
     make: 'Ford',
     model: 'Fusion',
@@ -65,6 +72,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    car_id: 8,
     filename: '08-Toyota-Corolla.jpeg',
     make: 'Toyota',
     model: 'Corolla',
@@ -74,6 +82,7 @@ const cardata = [
     condition: 'Excellent'
 },
 {
+    car_id: 9,
     filename: '09-Nissan-Versa.jpeg',
     make: 'Nissan',
     model: 'Versa',
@@ -83,6 +92,7 @@ const cardata = [
     condition: 'Fair'
 },
 {
+    car_id: 10,
     filename: '10-Mazda-3.jpeg',
     make: 'Mazda',
     model: 'Mazda3',
@@ -92,6 +102,7 @@ const cardata = [
     condition: 'Good',
 },
 {
+    car_id: 11,
     filename: '11-Subaru-Impreza.jpeg',
     make: 'Subaru',
     model: 'Impreza',
