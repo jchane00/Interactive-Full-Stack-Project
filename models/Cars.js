@@ -5,12 +5,6 @@ class Cars extends Model {}
 
 Cars.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
     make: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -19,8 +13,24 @@ Cars.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    vin_number: {
+    year: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    price: {
+      type: DataTypes.DECIMAL,
+      allowNull: false,
+    },
+    milage: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    condition: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    vin_number: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },
