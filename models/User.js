@@ -43,6 +43,11 @@ User.init(
         return newUserData;
       },
     },
+
+    User.prototype.validPassword = function(password){
+      return bcrypt.compareSync(password, this.password);
+    },
+
     sequelize,
     timestamps: false,
     freezeTableName: true,

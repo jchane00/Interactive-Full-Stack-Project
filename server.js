@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 3001;
 
 // Set up sessions
 const sess = {
+  key: 'user_sid',
   secret: 'Super secret secret',
   resave: false,
   saveUninitialized: true,

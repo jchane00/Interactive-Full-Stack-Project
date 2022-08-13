@@ -6,7 +6,6 @@ const seedAll = async () => {
 
   await seedCars();
 
-  //await seedPaintings();
 
   process.exit(0);
 };

@@ -5,6 +5,11 @@ class Cars extends Model {}
 
 Cars.init(
   {
+    car_id:{
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement:true
+    }
     make: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -20,6 +25,9 @@ Cars.init(
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false,
+      validate: {
+        isDecimal:true
+      }
     },
     milage: {
       type: DataTypes.INTEGER,
